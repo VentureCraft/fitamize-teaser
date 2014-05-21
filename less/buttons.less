@@ -5,8 +5,8 @@
 			position: relative;
 			display: inline-block;
 			border: 0;
-			background: #35b88f;
-			color: #fff;
+			background-color: @white;
+			color: @primaryColor;;
 			cursor: pointer;
 			text-decoration: none;
 			outline: 0;
@@ -21,7 +21,7 @@
 			transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
 
 			&:hover {
-				background: #45c89f;
+				background-color: fadeOut(@white,15%);
 			}
 
 			&.style2 {

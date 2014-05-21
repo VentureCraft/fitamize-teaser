@@ -8,17 +8,19 @@
 		background-size: cover;
 		background-position: center 0;
 		background-attachment: fixed;
+		font-size: 62.5%;
 		-webkit-font-smoothing: antialiased;
+
 	}
 
 	body,input,textarea,select
 	{
 		font-family: @primaryFontStack;
-		font-size: 18pt;
-		line-height: 1.75em;
+		
+		//line-height: 1.75em;
 		font-weight: 300;
 		
-		color: #3a3939;
+		color: #666666;
 		text-shadow: 0 0 0.5px rgba(58,57,57,0.25);
 		-webkit-text-stroke: 0.25px;
 	}
@@ -43,8 +45,12 @@
 	
 	h3
 	{
-		font-size: 1em;
+		font-size: 3.6em;
 
+	}
+
+	h4 {
+		font-size: 2.2em;
 	}
 		
 	strong, b
@@ -59,15 +65,15 @@
 
 	a
 	{
-		color: #35b88f;
-		text-shadow: 0 0 0.5px rgba(53,184,143,0.25);
+		color: @white;
+		/*
 		-moz-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
 		-webkit-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
 		-o-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
 		-ms-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
 		transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+		*/
 		text-decoration: none;
-		border-bottom: dotted 1px rgba(53,184,143,0.5);
 	}
 	
 		a:hover
@@ -105,24 +111,24 @@
 	
 	p, ul, ol, dl, table
 	{
-		margin-bottom: 1em;
+		//margin-bottom: 1em;
 	}
 
 	header
 	{
-		margin-bottom: 1em;
+		//margin-bottom: 1em;
 	}
 	
 		header p
 		{
 			display: block;
-			margin: 0.5em 0 0 0;
-			padding: 0 0 1.5em 0;
+			//margin: 0.5em 0 0 0;
+			//padding: 0 0 1.5em 0;
 		}
 		
 	footer
 	{
-		margin-top: 1em;
+		//margin-top: 1em;
 	}
 
 	br.clear
@@ -131,11 +137,11 @@
 	}
 
 	/* Sections/Articles */
-	
+
 		section,
 		article
 		{
-			margin-bottom: 3em;
+			//margin-bottom: 3em;
 		}
 		
 		section > :last-child,
@@ -155,3 +161,49 @@
 		{
 			margin-bottom: 0;
 		}
+
+
+		/* Images */
+
+		.image
+		{
+			display: inline-block;
+			border: 0;
+		}
+		
+			.image img
+			{
+				display: block;
+				width: 100%;
+			}
+
+			.image.featured
+			{
+				display: block;
+				width: 100%;
+				margin: 0 0 2em 0;
+			}
+			
+			.image.full
+			{
+				display: block;
+				width: 100%;
+			}
+			
+			.image.left
+			{
+				float: left;
+				margin: 0 2em 2em 0;
+			}
+			
+			.image.centered
+			{
+				display: block;
+				margin: 0 0 2em 0;
+			}
+
+				.image.centered img
+				{
+					margin: 0 auto;
+					width: auto;
+				}

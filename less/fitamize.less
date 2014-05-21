@@ -5,16 +5,9 @@
 /*********************************************************************************/
 
 @import "variables.less";
+@import "mixins.less";
 @import "basic.less";
 @import "buttons.less";
-
-
-#intro
-{
-	height: 1000px;
-	background: #ffffff;
-}
-
 
 /*********************************************************************************/
 /* Header                                                                        */
@@ -34,22 +27,203 @@
 			display: inline-block;
 			padding: 0 0 0em 0;
 
-			h1 {
+			h2 {
 				font-weight: 600;
-				font-size: 2em;
+				font-size: 3.8em;
 			}
 
 			p {
-				font-size: 1em;
+				font-size: 3.8em;
 				padding: 0;
+			}
+
+			.button {
+				display: block;
+				padding: .3em 0em .3em 0em;
+				font-size: 2.4em;
+				font-weight: 400;
 			}
 		}
 	}
 				
 
-		
+/*********************************************************************************/
+/* Intro                                                                         */
+/*********************************************************************************/
+
+#intro
+{
+	position: relative;
+	background: #e2e2e2;
+	text-align: center;
+	padding: 4em 0em 0em 0em;
+
+	header {
+
+
+
+		h2 {
+			color: @primaryColor;
+			font-size: 3.6em;
+
+		}
+
+		p {
+			font-size: 1.8em;
+		}
+
+	}
+
+	footer {
+		padding: 4em 0em 0em 0em;
+	}
+
+}
+
+
+
+/*********************************************************************************/
+/* Features                                                                      */
+/*********************************************************************************/
 
 			
+#features
+{
+
+	background: @white;
+	position: relative;
+	margin: 0;
+	padding: 4em 0em 0em 0em;
+
+	header {
+
+		padding: 0em 0em 4em 0em;
+
+		h3 {
+			font-weight: 200;
+			color: @primaryColor;
+		}
+
+		p {
+			font-size: 1.8em;
+		}
+
+	}
+
+	article {
+		background-color: @primaryColor;
+		padding: 4em 0em;
+
+		h4 {
+			color: @white;
+			font-weight: 600;
+		}
+
+		p {
+			color: @white;
+			font-size: 1.6em;
+			font-weight: 300;
+
+			.underline {
+
+				.underline(1);
+
+			}
+		}
+	}
+
+	footer {
+		background-color: @primaryColor;
+		text-align: center;
+		padding: 0em 0em 4em 0em;
+
+		.button {
+
+			padding: 1em 1.5em 1em 1.5em;
+			font-weight: 600;
+			font-size: 1.8em;
+
+		}
+	}
+}
+
+/*********************************************************************************/
+/* Team                                                                          */
+/*********************************************************************************/
+
+			
+#team
+{
+
+	background: #eaeaea;
+	position: relative;
+	margin: 0;
+
+
+	header {
+
+			padding: 4em 0em;
+
+		.team-member {
+			text-align: center;
+
+			h4 {
+				color: @primaryColor;
+			}
+		}
+
+	}
+
+	footer {
+		background: @white;
+			padding: 4em 0em;
+	}
+}
+
+		
+/*********************************************************************************/
+/* Register                                                                      */
+/*********************************************************************************/
+
+			
+#register
+{
+
+	background: #333;
+	position: relative;
+	height: 400px;
+	margin: 0;
+
+	header {
+
+		padding: 4em 0em;
+
+		background: #000;
+
+		h2 {
+			color: @white;
+			font-size: 3.2em;
+		}
+
+		h3 {
+			font-size: 2.2em;
+			color: @white;
+		}
+
+		p {
+			font-size: 1.8em;
+			color: @white;
+		}
+
+	}
+
+	footer {
+
+		padding: 4em 0em;
+
+	}
+}
+
 /*********************************************************************************/
 /* Footer                                                                        */
 /*********************************************************************************/
@@ -57,23 +231,26 @@
 	#footer
 	{
 		position: relative;
-		color: #fff;
+		color: @white;
 		text-align: center;
-		margin: 4.5em 0 0 0;
+		margin: 0;
 		background: #333333;
 
+
+		header {
+			
+		}
+
 		footer {
+			
+			padding: 4em 0em;
 
 			p {
 
 				color: #ccc;
-				font-size: .5em;
+				font-size: 1.2em;
 				font-weight: 200;
-				letter-spacing: .1em;
-
-				strong {
-					color: #fff;
-				}
+				letter-spacing: .05em;
 
 			}
 
