@@ -14,16 +14,15 @@ body {
   background-position: center 0;
   background-attachment: fixed;
   font-size: 62.5%;
+  font-weight: 300;
+  color: #666666;
+  font-family: 'Source Sans Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 body,
 input,
 textarea,
 select {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
-  color: #666666;
-  text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
   -webkit-text-stroke: 0.25px;
 }
 h1,
@@ -32,8 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
-  line-height: 1.75em;
+  font-weight: 200;
 }
 h1 a,
 h2 a,
@@ -44,8 +42,14 @@ h6 a {
   color: inherit;
   text-decoration: none;
 }
+h1 {
+  font-size: 3.6em;
+  line-height: 1.4em;
+}
 h2 {
-  font-size: 1.25em;
+  font-size: 2.8em;
+  line-height: 1.2em;
+  font-weight: 400;
 }
 h3 {
   font-size: 3.6em;
@@ -206,21 +210,34 @@ form ul.actions {
   border: 0;
   background-color: #ffffff;
   color: #ef4036;
+  font-size: 1.8em;
+  font-weight: 400;
   cursor: pointer;
   text-decoration: none;
   outline: 0;
-  padding: .3em 2em .3em 2em;
+  padding: 1em 0em 1em 0em;
   text-align: center;
   border-radius: .2em;
-  font-weight: 300;
   -moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
   -webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
   -o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
   -ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
   transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
 }
+.button.block {
+  display: block;
+}
 .button:hover {
   background-color: rgba(255, 255, 255, 0.85);
+}
+.button.outline {
+  background: none;
+  box-shadow: inset 0 0 0 1px #ffffff;
+  color: #ffffff;
+}
+.button.outline:hover {
+  color: #ef4036;
+  background-color: #ffffff;
 }
 .button.style2 {
   color: #ffffff;
@@ -242,29 +259,23 @@ form ul.actions {
 #header {
   position: relative;
   color: #fff;
-  text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
   text-align: center;
   margin: 0;
-  padding: 0em 0 0em 0;
   cursor: default;
 }
 #header header {
   display: inline-block;
-  padding: 0 0 0em 0;
+  padding: 0em;
 }
-#header header h2 {
+#header header .logo {
+  margin-bottom: 4em;
+}
+#header header h1 strong {
   font-weight: 600;
-  font-size: 3.8em;
 }
 #header header p {
   font-size: 3.8em;
-  padding: 0;
-}
-#header header .button {
-  display: block;
-  padding: .3em 0em .3em 0em;
-  font-size: 2.4em;
-  font-weight: 400;
+  margin-bottom: 3em;
 }
 /*********************************************************************************/
 /* Intro                                                                         */
@@ -278,9 +289,12 @@ form ul.actions {
 #intro header h2 {
   color: #ef4036;
   font-size: 3.6em;
+  margin-bottom: 1em;
 }
 #intro header p {
-  font-size: 1.8em;
+  font-size: 2em;
+  line-height: 1.3em;
+  margin-bottom: 2em;
 }
 #intro footer {
   padding: 4em 0em 0em 0em;
@@ -295,40 +309,58 @@ form ul.actions {
   padding: 4em 0em 0em 0em;
 }
 #features header {
-  padding: 0em 0em 4em 0em;
+  padding: 0em 0em 8em 0em;
 }
-#features header h3 {
-  font-weight: 200;
+#features header h2 {
   color: #ef4036;
+  margin: 2em 0em 1em 0em;
 }
 #features header p {
   font-size: 1.8em;
+  line-height: 1.3em;
+  margin-bottom: 1em;
 }
 #features article {
   background-color: #ef4036;
-  padding: 4em 0em;
+  padding: 6em 0em 6em 0em;
+  position: relative;
 }
 #features article h4 {
   color: #ffffff;
   font-weight: 600;
+  margin-bottom: .5em;
 }
 #features article p {
   color: #ffffff;
-  font-size: 1.6em;
+  font-size: 1.5em;
+  line-height: 1.3em;
   font-weight: 300;
 }
 #features article p .underline {
   border-bottom: 1px solid #ffffff;
 }
+#features article .feature-icon {
+  margin-top: -100px;
+}
 #features footer {
   background-color: #ef4036;
   text-align: center;
-  padding: 0em 0em 4em 0em;
+  padding: 0em 0em 8em 0em;
 }
 #features footer .button {
   padding: 1em 1.5em 1em 1.5em;
   font-weight: 600;
   font-size: 1.8em;
+  position: relative;
+}
+#features footer .button .discount-bubble {
+  width: 201px;
+  height: 99px;
+  display: block;
+  background: url(../images/discount-bubble.png);
+  position: absolute;
+  right: -230px;
+  bottom: -40px;
 }
 /*********************************************************************************/
 /* Team                                                                          */
@@ -341,15 +373,41 @@ form ul.actions {
 #team header {
   padding: 4em 0em;
 }
+#team header h2 {
+  color: #333;
+  margin-bottom: .5em;
+}
+#team header p {
+  font-size: 1.8em;
+  line-height: 1.3em;
+  margin-bottom: 1em;
+}
 #team header .team-member {
   text-align: center;
 }
+#team header .team-member .avatar {
+  margin-bottom: 1em;
+}
 #team header .team-member h4 {
   color: #ef4036;
+  font-weight: 400;
+}
+#team header .team-member p {
+  font-size: 1.4em;
+  color: #999;
+  margin-bottom: 2em;
 }
 #team footer {
   background: #ffffff;
   padding: 4em 0em;
+}
+#team footer p {
+  font-size: 1.6em;
+  line-height: 1.3em;
+  margin-bottom: 1em;
+}
+#team footer p em {
+  font-family: Palatino;
 }
 /*********************************************************************************/
 /* Register                                                                      */

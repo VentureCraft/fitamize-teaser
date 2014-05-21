@@ -6,22 +6,40 @@
 			display: inline-block;
 			border: 0;
 			background-color: @white;
-			color: @primaryColor;;
+			color: @primaryColor;
+			font-size: 1.8em;
+			font-weight: 400;
 			cursor: pointer;
 			text-decoration: none;
 			outline: 0;
-			padding: .3em 2em .3em 2em;
+			padding: 1em 0em 1em 0em;
 			text-align: center;
 			border-radius: .2em;
-			font-weight: 300;
 			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
 			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
 			-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
 			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
 			transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
 
+			&.block {
+				display: block;
+			}
+
 			&:hover {
 				background-color: fadeOut(@white,15%);
+			}
+
+			&.outline {
+
+				background: none;
+				box-shadow: inset 0 0 0 1px @white;
+				color: @white;
+
+				&:hover {
+					color: @primaryColor;
+					background-color: @white;
+				}
+
 			}
 
 			&.style2 {
