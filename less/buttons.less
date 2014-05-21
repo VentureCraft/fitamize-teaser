@@ -1,0 +1,56 @@
+/* Buttons */
+		
+		.button
+		{
+			position: relative;
+			display: inline-block;
+			border: 0;
+			background: #35b88f;
+			color: #fff;
+			cursor: pointer;
+			text-decoration: none;
+			outline: 0;
+			padding: .3em 2em .3em 2em;
+			text-align: center;
+			border-radius: .2em;
+			font-weight: 300;
+			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+			-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+
+			&:hover {
+				background: #45c89f;
+			}
+
+			&.style2 {
+
+				color: #ffffff;
+				background: none;
+				box-shadow: inset 0 0 0 2px #fff;
+
+				&:hover {
+					background: rgba(255,255,255,0.2);
+					color: #fff !important;
+					text-shadow: 0 0 0.5px rgba(255,255,255,0.25) !important;
+				}
+
+				&:active {
+
+				}
+
+			}
+
+			&.style3 {
+
+				background: none;
+				color: #3a3939;
+				box-shadow: inset 0 0 0 1px #dad9d9;
+
+				&:hover {
+					background: rgba(58,57,57,0.025);
+				}
+
+			}
+		}
