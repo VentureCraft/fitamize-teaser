@@ -435,17 +435,17 @@ article:last-child {
   display: block;
   width: 100%;
   padding: .7em 1em .8em 1em;
-  background: none;
+  background: #333;
   color: #ccc;
   font-size: 1.6em;
   font-weight: 200;
   border-radius: .2em;
   outline: none;
+  border-style: solid;
   outline-color: #ffffff;
   border-color: #ffffff;
   -webkit-text-stroke: 0;
-  border-style: none;
-  box-shadow: inset 0 0 0 2px #ffffff;
+  border-width: 2px;
 }
 /*********************************************************************************/
 /* Footer                                                                        */
