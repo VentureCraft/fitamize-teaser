@@ -33,7 +33,7 @@
 					//'wide': { range: '-1680', containers: 960 },
 					'normal': { range: '-1280', containers: '95%',grid: {}},
 					//'narrow': { range: '-840', containers: '95%', grid: { gutters: 30 } },
-					'mobile': { range: '-640', lockViewport: true, containers: '90%', grid: { collapse: true, gutters: 20 } }
+					'mobile': { range: '-900', lockViewport: true, containers: '90%', grid: { collapse: true, gutters: 20 } }
 				}
 			},
 
@@ -153,6 +153,14 @@
 							$window.unbind('scroll.overflow_parallax');
 				}
 				
+
+				$('#team .team-member').on('click',function(e) {
+
+					var target = $(this).attr('div-target');
+
+					$("."+target).show().siblings().hide();
+
+				});
 			
 
 		});

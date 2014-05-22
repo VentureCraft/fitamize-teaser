@@ -16,3 +16,9 @@
 #team {
   text-align: center;
 }
+#register {
+  text-align: center;
+}
+#register footer form label {
+  text-align: left;
+}

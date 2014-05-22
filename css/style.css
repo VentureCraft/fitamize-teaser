@@ -9,7 +9,7 @@
 /* Basic                                                                         */
 /*********************************************************************************/
 body {
-  background: #ef4036 url('../images/header-bg.jpg') no-repeat;
+  background: #ef4036 url('../images/bg.jpg') no-repeat;
   background-size: cover;
   background-position: center 0;
   background-attachment: fixed;
@@ -22,7 +22,9 @@ body {
 body,
 input,
 textarea,
-select {
+select,
+button {
+  font-family: 'Source Sans Pro', sans-serif;
   -webkit-text-stroke: 0.25px;
 }
 h1,
@@ -149,60 +151,6 @@ article:last-child {
   width: auto;
 }
 /* Forms */
-form label {
-  display: block;
-  margin: 0 0 0.5em 0;
-}
-form input.button,
-form input.text,
-form select,
-form textarea {
-  -webkit-appearance: none;
-  display: block;
-  border: 0;
-  background: #f5f5f5;
-  width: 100%;
-  padding: 0.75em;
-  -moz-transition: background-color 0.35s ease-in-out;
-  -webkit-transition: background-color 0.35s ease-in-out;
-  -o-transition: background-color 0.35s ease-in-out;
-  -ms-transition: background-color 0.35s ease-in-out;
-  transition: background-color 0.35s ease-in-out;
-}
-form input.text:focus,
-form select:focus,
-form textarea:focus {
-  background: #f2f2f2;
-}
-form textarea {
-  min-height: 12em;
-}
-form .formerize-placeholder {
-  color: #5a5959 !important;
-}
-form ::-webkit-input-placeholder {
-  color: #5a5959 !important;
-}
-form :-moz-placeholder {
-  color: #5a5959 !important;
-}
-form ::-moz-placeholder {
-  color: #5a5959 !important;
-}
-form :-ms-input-placeholder {
-  color: #5a5959 !important;
-}
-form ::-moz-focus-inner {
-  border: 0;
-}
-form input.text,
-form select {
-  line-height: 1em;
-}
-form ul.actions {
-  margin-bottom: 0;
-  text-align: center;
-}
 /* Buttons */
 .button {
   position: relative;
@@ -226,6 +174,7 @@ form ul.actions {
 }
 .button.block {
   display: block;
+  width: 100%;
 }
 .button:hover {
   background-color: rgba(255, 255, 255, 0.85);
@@ -252,6 +201,25 @@ form ul.actions {
 .button.style3 {
   background: #ef4036;
   color: #ffffff;
+}
+.container.micro {
+  width: 600px;
+}
+.arrow-wrapper {
+  width: 100px;
+  margin: 0 auto;
+}
+.arrow-wrapper .arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 40px solid #000;
+}
+.arrow-wrapper .arrow-down.small {
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 20px solid #000;
 }
 /*********************************************************************************/
 /* Header                                                                        */
@@ -384,6 +352,7 @@ form ul.actions {
 }
 #team header .team-member {
   text-align: center;
+  cursor: pointer;
 }
 #team header .team-member .avatar {
   margin-bottom: 1em;
@@ -399,12 +368,21 @@ form ul.actions {
 }
 #team footer {
   background: #ffffff;
-  padding: 4em 0em;
+  padding-bottom: 4em;
+}
+#team footer .team-info p {
+  margin-top: 1.5em;
+}
+#team footer .arrow-wrapper {
+  margin: 0 auto;
+  width: 50px;
+}
+#team footer .arrow-down {
+  border-top-color: #eaeaea;
 }
 #team footer p {
   font-size: 1.6em;
   line-height: 1.3em;
-  margin-bottom: 1em;
 }
 #team footer p em {
   font-family: Palatino;
@@ -418,23 +396,56 @@ form ul.actions {
   margin: 0;
 }
 #register header {
-  padding: 4em 0em;
+  padding: 4em 0em 4em 0em;
   background: #000;
 }
 #register header h2 {
   color: #ffffff;
-  font-size: 3.2em;
-}
-#register header h3 {
-  font-size: 2.2em;
-  color: #ffffff;
+  margin-bottom: .5em;
 }
 #register header p {
   font-size: 1.8em;
+  line-height: 1.3em;
   color: #ffffff;
 }
+#register article {
+  background: #000;
+  padding-bottom: 4em;
+}
+#register article p {
+  margin-top: .6em;
+  font-size: 1.6em;
+  color: #ffffff;
+  line-height: 1.2em;
+}
 #register footer {
-  padding: 4em 0em;
+  padding: 0em 0em 12em 0em;
+}
+#register footer form {
+  margin-top: 4em;
+}
+#register footer form label {
+  font-size: 1.5em;
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: .5em;
+  display: block;
+}
+#register footer form input {
+  display: block;
+  width: 100%;
+  padding: .7em 1em .8em 1em;
+  background: none;
+  color: #ccc;
+  font-size: 1.6em;
+  font-weight: 200;
+  border-radius: .2em;
+  outline: none;
+  outline-color: #ffffff;
+  border-color: #ffffff;
+  -webkit-text-stroke: 0;
+  border-style: none;
+  box-shadow: inset 0 0 0 2px #ffffff;
 }
 /*********************************************************************************/
 /* Footer                                                                        */
@@ -445,6 +456,9 @@ form ul.actions {
   text-align: center;
   margin: 0;
   background: #333333;
+}
+#footer header .social-icon {
+  margin: 0em 2em 0em 2em;
 }
 #footer footer {
   padding: 4em 0em;

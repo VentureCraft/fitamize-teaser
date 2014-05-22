@@ -253,7 +253,7 @@ fb_param.currency = 'AUD';
 						<div class="row">
 
 							<div class="4u">
-								<div class="team-member">
+								<div class="team-member" div-target="team-chris">
 									<img class="avatar" src="images/team-chris.png"/>
 									<h4>Chris Duell</h4>
 									<p>Co-Founder / Lead Developer</p>
@@ -262,7 +262,7 @@ fb_param.currency = 'AUD';
 							</div>
 
 							<div class="4u">
-								<div class="team-member">
+								<div class="team-member" div-target="team-bobby">
 									<img class="avatar" src="images/team-bobby.png"/>
 									<h4>Bobby Sciacchitano</h4>
 									<p>Co-Founder / Application Architect</p>
@@ -271,7 +271,7 @@ fb_param.currency = 'AUD';
 							</div>
 
 							<div class="4u">
-								<div class="team-member">
+								<div class="team-member" div-target="team-matt">
 									<img class="avatar" src="images/team-matt.png"/>
 									<h4>Matt Trimarchi</h4>
 									<p>Co-Founder / Lead Designer</p>
@@ -286,15 +286,55 @@ fb_param.currency = 'AUD';
 
 				</header>
 
-				<footer class="no-mobile">
+				<footer class="not-mobile">
 
 					<div class="container small">
 						<div class="row">
-						<div class="12u">
-						<p>Chris isn't your standard developer, breaking the mould and things in the gym by choosing the road to swole instead of settling for being a twiggy geek. He also gets too many of his carbs from beer, but he's OK with that.</p>
+							<div class="12u">
 
-						<p><em>"Tracking workouts on paper sucks, I keep breaking my pencil between sets and my workout sheet gets soggy from sweat. We need to fix this."</em></p>
-						</div>
+								<div class="team-info team-chris">
+									<div class="row">
+										<div class="4u">
+											<div class="arrow-wrapper">
+												<div class="arrow-down small"></div>
+											</div>
+										</div>
+									</div>
+									<p>Chris isn't your standard developer, breaking the mould and things in the gym by choosing the road to swole instead of settling for being a twiggy geek. He also gets too many of his carbs from beer, but he's OK with that.</p>
+
+									<p><em>"Tracking workouts on paper sucks, I keep breaking my pencil between sets and my workout sheet gets soggy from sweat. We need to fix this."</em></p>
+
+								</div>
+
+								<div class="team-info team-bobby" style="display: none;">
+									<div class="row">
+										<div class="-4u 4u">
+											<div class="arrow-wrapper">
+												<div class="arrow-down small"></div>
+											</div>
+										</div>
+									</div>
+									<p>Bobby is a geek at heart who has worked on large scale web projects since before it was cool. When not running ridiculously long distances on a Sunday morning, Bobby puts most of his effort into finding excuses to avoid leg day.</p>
+
+									<p><em>"Fitamize was born out of the idea that Fitness Professionals need a easy and effective way to put their clients front and centre. The features which Fitamize has will most certainly achieve this goal."</em></p>
+
+								</div>
+
+								<div class="team-info team-matt" style="display: none;">
+									<div class="row">
+										<div class="-8u 4u">
+											<div class="arrow-wrapper">
+												<div class="arrow-down small"></div>
+											</div>
+										</div>
+									</div>
+									<p>Matt is big into everything web related and loves crafting beautiful and simplistic user interfaces. In his spare time Matt can be found writing music, enjoying a beer and moving heavy things in the gym.</p>
+
+									<p><em>"I want fitamize to change the way trainers and clients interact and hopefully stop people using paper and pen to track client progress"</em></p>
+
+								</div>
+
+							</div>
 						</div>
 					</div>
 
@@ -306,41 +346,51 @@ fb_param.currency = 'AUD';
 
 				<header>
 
-					<div class="container">
-						<h2>Great work, you made it this far!</h2>
-						<h3>We believe that fitamize will give you an edge with your clients and we would love for you to join our early access program. <strong>But why join?</strong></h3>
+					<div class="container small">
+						<div class="row">
+							<div class="12u">
+								<h2>Great work, you made it this far!</h2>
+								<p>We believe that fitamize will give you an edge with your clients and we would love for you to join our early access program. <strong>But why join?</strong></p>
+							</div>
+						</div>
+					</div>
+				</header>
+
+				<article>
+
+					<div class="container small">
 
 						<div class="row">
 
 							<div class="4u">
 								<div class="row">
-									<div class="3u">
-									<img src="images/discount-image.png"/>
+									<div class="4u">
+										<img src="images/discount-image.png"/>
 									</div>
-									<div class="9u">
-									<p>Discounted price for life when we launch</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="4u">
-								<div class="row">
-									<div class="3u">
-									<img src="images/yoursay-image.png"/>
-									</div>
-									<div class="9u">
-									<p>Have your say in what features are added</p>
+									<div class="8u">
+										<p>Discounted price for life when we launch</p>
 									</div>
 								</div>
 							</div>
 
 							<div class="4u">
 								<div class="row">
-									<div class="3u">
-									<img src="images/early-image.png"/>
+									<div class="4u">
+										<img src="images/yoursay-image.png"/>
 									</div>
-									<div class="9u">
-									<p>Free early access to features as we build</p>
+									<div class="8u">
+										<p>Have your say in what features are added</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="4u">
+								<div class="row">
+									<div class="4u">
+										<img src="images/early-image.png"/>
+									</div>
+									<div class="8u">
+										<p>Free early access to features as we build</p>
 									</div>
 								</div>
 							</div>
@@ -349,49 +399,58 @@ fb_param.currency = 'AUD';
 
 					</div>
 
-				</header>
+				</article>
 
 				<footer>
-				<div class="container">
-					<form role="form" action="http://fitamize.us8.list-manage.com/subscribe/post?u=49bfdf69afdd50093f4fc89cf&amp;id=2fd6c0cdfc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
 
-							<div class="col-sm-6">
-								<div class="form-group">
+					<div class="container micro">
+						<div class="arrow-wrapper">
+							 <div class="arrow-down"></div>
+						</div>
+					</div>
 
-									<label for="mce-FNAME">First Name</label>
-									<input type="text" value=""  name="FNAME" id="mce-FNAME">
+<form role="form" action="http://fitamize.us8.list-manage.com/subscribe/post?u=49bfdf69afdd50093f4fc89cf&amp;id=2fd6c0cdfc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
+					<div class="container micro">
+						
+
+								<div class="row">
+									<div class="6u">
+
+										<label for="mce-FNAME">First Name</label>
+										<input type="text" value=""  name="FNAME" id="mce-FNAME">
+									</div>
+
+									<div class="6u">
+										<label for="mce-LNAME">Last Name</label>
+										<input type="text" value="" name="LNAME" id="mce-LNAME">
+									</div>
 								</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="form-group">
-									<label for="mce-LNAME">Last Name</label>
-									<input type="text" value="" name="LNAME" id="mce-LNAME">
+
+								<div class="row">
+
+									<div class="12u">
+
+										<label for="mce-EMAIL">Email Address</label>
+										<input type="email" value="" name="EMAIL" id="mce-EMAIL">
+									</div>
 								</div>
-							</div>
 
-							<div class="col-sm-12">
+								<div class="row">
+									<div class="12u">
 
-								<div class="form-group">
-
-									<label for="mce-EMAIL">Email Address</label>
-									<input type="email" value="" name="EMAIL" id="mce-EMAIL">
+										<button name="subscribe" type="submit" class="button block style3">Register your interest</button>
+									</div>
 								</div>
-							</div>
-							<div class="col-sm-12">
-								<div class="form-group">
 
-									<button name="subscribe" type="submit" class="button style3">Register your interest</button>
+								
+
+								<div style="position: absolute; left: -5000px;">
+									<input type="text" name="b_49bfdf69afdd50093f4fc89cf_2fd6c0cdfc" tabindex="-1" value="">
 								</div>
-							</div>
 
 							
-
-							<div style="position: absolute; left: -5000px;">
-								<input type="text" name="b_49bfdf69afdd50093f4fc89cf_2fd6c0cdfc" tabindex="-1" value="">
-							</div>
-
-						</form>
-						</div>
+					</div>
+					</form>
 				</footer>
 
 			</section>
@@ -400,8 +459,15 @@ fb_param.currency = 'AUD';
 
 				<header>
 
-				<a target="_blank" href="http://facebook.com/fitamize"><img src="images/social-facebook-icon.png"/></a>
-				<a target="_blank" href="http://twitter.com/fitamize"><img src="images/social-twitter-icon.png"/></a>
+				<div class="container micro">
+					<div class="row">
+						<div class="12u">
+							<a class="social-icon" target="_blank" href="http://facebook.com/fitamize"><img src="images/social-facebook-icon.png"/></a>
+					
+							<a class="social-icon" target="_blank" href="http://twitter.com/fitamize"><img src="images/social-twitter-icon.png"/></a>
+						</div>
+					</div>
+				</div>
 
 				</header>
 				<footer>
