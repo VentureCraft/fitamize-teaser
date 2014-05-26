@@ -14,7 +14,7 @@
 			useFullScreenHeader: true,
 
 		// Parallax Background
-			useParallax: true,
+			useParallax: false,
 			parallaxFactor: 2,	// Lower = more intense. Higher = less intense.
 			parallaxLimit: 1680,	// Performance tweak: turns off parallax if the viewport width exceeds this value
 

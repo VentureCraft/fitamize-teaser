@@ -9,7 +9,7 @@
 /* Basic                                                                         */
 /*********************************************************************************/
 body {
-  background: #ef4036 url('../images/bg.jpg') no-repeat;
+  background-color: #ef4036;
   background-size: cover;
   background-position: center 0;
   background-attachment: fixed;
