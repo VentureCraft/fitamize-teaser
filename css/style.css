@@ -221,6 +221,108 @@ article:last-child {
   border-right: 25px solid transparent;
   border-top: 20px solid #000;
 }
+/* Header */
+@-moz-keyframes reveal-menu {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-webkit-keyframes reveal-menu {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-o-keyframes reveal-menu {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-ms-keyframes reveal-menu {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes reveal-menu {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+#menu {
+  background: white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
+  color: inherit;
+  cursor: default;
+  font-size: 0.8em;
+  left: 0;
+  padding: 1em 1.5em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+#menu .top-button {
+  font-size: 2em;
+  min-width: 0;
+  width: auto;
+  padding: .5em;
+}
+#menu nav {
+  letter-spacing: 0.075em;
+  position: absolute;
+  right: 1.5em;
+  top: 0.75em;
+}
+#menu nav ul li {
+  display: inline-block;
+  margin-left: 1.5em;
+}
+#menu nav ul li > ul {
+  display: none;
+}
+#menu nav ul li .button {
+  font-size: 2em;
+  min-width: 0;
+  width: auto;
+  padding: .5em;
+}
+#menu.reveal {
+  -moz-animation: reveal-menu 0.5s;
+  -webkit-animation: reveal-menu 0.5s;
+  -o-animation: reveal-menu 0.5s;
+  -ms-animation: reveal-menu 0.5s;
+  animation: reveal-menu 0.5s;
+}
+#menu.alt {
+  -moz-animation: none;
+  -webkit-animation: none;
+  -o-animation: none;
+  -ms-animation: none;
+  animation: none;
+  background: transparent;
+  box-shadow: none;
+  color: white;
+  padding: 2em 2.5em;
+  position: absolute;
+}
+#menu.alt nav {
+  right: 2.5em;
+  top: 1.75em;
+}
 /*********************************************************************************/
 /* Header                                                                        */
 /*********************************************************************************/
